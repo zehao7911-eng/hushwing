@@ -26,7 +26,7 @@ export class RushAudio {
   sync(){
     if(!this.ctx)return;
     const now=this.ctx.currentTime,wanted=this.active&&!this.muted&&this.ctx.state==='running';
-    this.master.gain.setTargetAtTime(this.muted?0:.64,now,.026);
+    this.master.gain.setTargetAtTime(wanted?.64:0,now,.026);
     if(wanted===this.playing)return;
     this.playing=wanted;
     const id=++this.generation;
