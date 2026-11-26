@@ -1,0 +1,19 @@
+Actual gameplay source: https://github.com/NomanT17/Echo-Pulse
+Pinned commit: 5a13c2dd706eac276c3c00bc03a00b0e20448ddd
+License evidence: upstream README.md, "This project is open source and available under the MIT License."
+No separate LICENSE file existed in the inspected revision. Do not represent a fabricated copyright notice as the original license file.
+
+Copied unchanged for attribution and comparison:
+ping.js, player.js, utils.js, collectible.js, game.js, README.md.
+
+Runtime adaptation in ../echo-source.mjs:
+Echo constructor / revealsPoint / brightnessAt / update <- ping.js Ping.
+circleRect / resolveWallCollisions <- utils.js.
+move <- player.js normalized dx/dy, per-axis motion and wall resolution.
+collected <- game.js collectible distance test and collectible.js radius state.
+
+Changes: grid-scale world units; analog input; 3D renderer; lingering wave tail instead of expiry on reaching maxRadius. Enemy damage, source lives, original levels, original UI and assets are not shipped as gameplay. New authored chapters, bell gates, crystal relays, stars, saves, original meshes/audio/UI and SDK integration by Hushwing implementation.
+
+Applied skills: open-source-game-reference, game-development, 3d-games, web-games, mobile-games, game-art, game-design, game-audio.
+Art reference: Rezona Blindsight, observed Easy wide scan and initial movement November 26, 2026; no source/assets copied.
+Official GameWave document rechecked November 26, 2026; displayed revision November 24.
